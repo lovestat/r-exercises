@@ -1,0 +1,46 @@
+---
+title: "Week3"
+author: "ssc"
+date: "6/19/2020"
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DT)
+library(tidyverse)
+```
+
+Exercises
+Use the built-in data frame longley to answer the following questions.
+
+1. What year was the percentage of people employed relative to the population highest? Return the result as a data frame.
+
+```{r}
+longley %>% 
+  datatable()
+
+longley %>% 
+  mutate(Emploey.rate = Employed/Population) %>% 
+  arrange(desc(Emploey.rate)) %>% 
+  datatable()
+```
+
+
+2. The Korean war took place from 1950 - 1953. Filter the data frame so it only contains data from those years.
+```{r}
+longley %>% 
+  filter(Year %in% 1950:1953) %>% 
+  datatable()
+```
+
+
+3. What years did the number of people in the armed forces exceed the number of people unemployed?
+```{r}
+longley %>% 
+  filter(Armed.Forces > Unemployed) %>% 
+  datatable()
+```
+
