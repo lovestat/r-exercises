@@ -1,0 +1,41 @@
+---
+title: "Week2"
+author: "ssc"
+date: "6/19/2020"
+output: 
+  html_document:
+          keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+set.seed(962019)
+x <- sample(1:100, size = 100, replace = TRUE)
+```
+
+select every third values from x beginning at position 2;
+```{r}
+x[seq(from = 2, to = length(x), by = 3)]
+
+```
+
+remove all values with an odd index;
+```{r}
+x[-seq(from = 1, to = length(x), by = 2)]
+```
+
+
+remove every 4th value, but only if it is odd;
+```{r}
+x[seq_along(x) %% 4 != 0 | x %% 2 == 1]
+
+```
+
+
+remove all numbers divisible by 3 or 7 and replace them with 0.
+
+```{r}
+x[x %% 3 == 0 | x %% 7 == 0] <- 0
+```
+
