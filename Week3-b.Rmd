@@ -1,0 +1,66 @@
+---
+title: "Week3-b"
+author: "ssc"
+date: "6/19/2020"
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+flint <- read_csv("https://raw.githubusercontent.com/sta523-fa19/data/master/flint.csv")
+
+```
+
+```{r}
+flint 
+```
+
+```{r}
+
+
+flint2 <- flint %>% 
+  filter(zip != 48529, zip != 48502)
+
+flint2$zip <- with(flint2, reorder(zip, draw1, median))
+  
+  
+ggplot(flint2) + 
+  geom_boxplot(aes(x = draw1, y = zip), fill = "#256d7b", alpha = 0.5) + 
+  geom_vline(xintercept = 15, linetype = "longdash", color = "red", size = 1) + 
+  labs(title ="First draw of lead samples in Flint, MI homes", 
+       x = "Lead content (ppb)", 
+       y = "Zip code", 
+       caption = "Action level for lead is when 15 ppb is in more than 10% of customer taps sampled") + 
+  scale_x_continuous(
+    limits = c(0,165),
+    breaks = seq(0, 165, 15)
+  ) +
+  annotate("text", x = 45, y = "48532", label = "EPA action level, 15 ppb", size = 16/.pt, color = "red") + 
+  theme_bw() + 
+  theme(plot.title = element_text(size = 16),
+        axis.title.x = element_text(size = 16),
+        axis.title.y = element_text(size = 16))
+
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
