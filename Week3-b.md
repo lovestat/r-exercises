@@ -50,7 +50,7 @@ ggplot(flint2) +
     limits = c(0,165),
     breaks = seq(0, 165, 15)
   ) +
-  annotate("text", x = 45, y = "48532", label = "EPA action level, 15 ppb", size = 16/.pt, color = "red") + 
+  annotate("text", x = 45, y = "48504", label = "EPA action level, 15 ppb", size = 16/.pt, color = "red") + 
   theme_bw() + 
   theme(plot.title = element_text(size = 16),
         axis.title.x = element_text(size = 16),
