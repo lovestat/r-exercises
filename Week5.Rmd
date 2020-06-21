@@ -1,0 +1,26 @@
+---
+title: "Week5"
+author: "ssc"
+date: "6/20/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(DT)
+```
+
+
+
+```{r}
+usa_pop <- world_bank_pop %>% 
+  filter(country == "USA") %>% 
+  gather(key = "year", value = "v", `2000`:`2017`) %>% 
+  relocate(year, .after = country) %>% 
+  spread(key = indicator, value = v) 
+
+usa_pop
+
+```
+
