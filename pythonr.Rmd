@@ -1,0 +1,31 @@
+---
+title: "pythoninr"
+author: "ssc"
+date: "6/22/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+```
+
+## R Markdown
+
+```{python}
+message = "Hello from a Python code chunk!"
+print(message)
+
+x = range(1, 5)
+s = {1, 1, 3, 4, 5, 5, 10, 10}
+
+```
+
+```{r}
+py$message
+
+
+py$x
+py$s$difference({1})
+```
+
