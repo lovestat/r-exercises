@@ -1,0 +1,85 @@
+20/06/22 19:51:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/06/22 19:51:25 INFO SecurityManager: Changing view acls to: ss
+20/06/22 19:51:25 INFO SecurityManager: Changing modify acls to: ss
+20/06/22 19:51:25 INFO SecurityManager: Changing view acls groups to: 
+20/06/22 19:51:25 INFO SecurityManager: Changing modify acls groups to: 
+20/06/22 19:51:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ss); groups with view permissions: Set(); users  with modify permissions: Set(ss); groups with modify permissions: Set()
+20/06/22 19:51:26 INFO HiveConf: Found configuration file file:/C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/conf/hive-site.xml
+20/06/22 19:51:26 INFO SparkContext: Running Spark version 3.0.0
+20/06/22 19:51:26 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+20/06/22 19:51:26 INFO ResourceUtils: ==============================================================
+20/06/22 19:51:26 INFO ResourceUtils: Resources for spark.driver:
+
+20/06/22 19:51:26 INFO ResourceUtils: ==============================================================
+20/06/22 19:51:26 INFO SparkContext: Submitted application: sparklyr
+20/06/22 19:51:26 INFO SecurityManager: Changing view acls to: ss
+20/06/22 19:51:26 INFO SecurityManager: Changing modify acls to: ss
+20/06/22 19:51:26 INFO SecurityManager: Changing view acls groups to: 
+20/06/22 19:51:26 INFO SecurityManager: Changing modify acls groups to: 
+20/06/22 19:51:26 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ss); groups with view permissions: Set(); users  with modify permissions: Set(ss); groups with modify permissions: Set()
+20/06/22 19:51:26 INFO Utils: Successfully started service 'sparkDriver' on port 4958.
+20/06/22 19:51:26 INFO SparkEnv: Registering MapOutputTracker
+20/06/22 19:51:26 INFO SparkEnv: Registering BlockManagerMaster
+20/06/22 19:51:26 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+20/06/22 19:51:26 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+20/06/22 19:51:26 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+20/06/22 19:51:26 INFO DiskBlockManager: Created local directory at C:\Users\ss\AppData\Local\spark\spark-3.0.0-bin-hadoop2.7\tmp\local\blockmgr-48f85ecc-991e-4f18-b009-84d2d5d2dcca
+20/06/22 19:51:26 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+20/06/22 19:51:26 INFO SparkEnv: Registering OutputCommitCoordinator
+20/06/22 19:51:26 WARN Utils: The configured local directories are not expected to be URIs; however, got suspicious values [C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/local]. Please check your configured local directories.
+20/06/22 19:51:27 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/06/22 19:51:27 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://127.0.0.1:4040
+20/06/22 19:51:27 INFO SparkContext: Added JAR file:/C:/Users/ss/Documents/R/win-library/4.0/sparklyr/java/sparklyr-3.0.0-preview-2.12.jar at spark://127.0.0.1:4958/jars/sparklyr-3.0.0-preview-2.12.jar with timestamp 1592880687246
+20/06/22 19:51:27 INFO Executor: Starting executor ID driver on host 127.0.0.1
+20/06/22 19:51:27 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 5009.
+20/06/22 19:51:27 INFO NettyBlockTransferService: Server created on 127.0.0.1:5009
+20/06/22 19:51:27 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+20/06/22 19:51:27 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 5009, None)
+20/06/22 19:51:27 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:5009 with 413.9 MiB RAM, BlockManagerId(driver, 127.0.0.1, 5009, None)
+20/06/22 19:51:27 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 5009, None)
+20/06/22 19:51:27 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 5009, None)
+20/06/22 19:51:27 INFO SharedState: loading hive config file: file:/C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/conf/hive-site.xml
+20/06/22 19:51:27 INFO SharedState: Setting hive.metastore.warehouse.dir ('C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive') to the value of spark.sql.warehouse.dir ('C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive').
+20/06/22 19:51:27 INFO SharedState: Warehouse path is 'C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive'.
+20/06/22 19:51:27 WARN SharedState: Not allowing to set spark.sql.warehouse.dir or hive.metastore.warehouse.dir in SparkSession's options, it should be set statically for cross-session usages
+20/06/22 19:51:30 INFO HiveUtils: Initializing HiveMetastoreConnection version 2.3.7 using Spark classes.
+20/06/22 19:51:30 INFO HiveConf: Found configuration file file:/C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/conf/hive-site.xml
+20/06/22 19:51:31 INFO SessionState: Created HDFS directory: C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive/ss
+20/06/22 19:51:31 INFO SessionState: Created HDFS directory: C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive/ss/3d3822ef-4baf-4e3f-9921-1868dee36ef0
+20/06/22 19:51:31 INFO SessionState: Created local directory: C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive/3d3822ef-4baf-4e3f-9921-1868dee36ef0
+20/06/22 19:51:31 INFO SessionState: Created HDFS directory: C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive/ss/3d3822ef-4baf-4e3f-9921-1868dee36ef0/_tmp_space.db
+20/06/22 19:51:31 INFO HiveClientImpl: Warehouse location for Hive client (version 2.3.7) is C:/Users/ss/AppData/Local/spark/spark-3.0.0-bin-hadoop2.7/tmp/hive
+20/06/22 19:51:31 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+20/06/22 19:51:31 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+20/06/22 19:51:31 INFO HiveMetaStore: 0: Opening raw store with implementation class:org.apache.hadoop.hive.metastore.ObjectStore
+20/06/22 19:51:31 INFO ObjectStore: ObjectStore, initialize called
+20/06/22 19:51:31 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+20/06/22 19:51:31 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+20/06/22 19:51:32 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+20/06/22 19:51:34 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+20/06/22 19:51:34 INFO ObjectStore: Initialized ObjectStore
+20/06/22 19:51:34 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+20/06/22 19:51:34 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@192.168.0.13
+20/06/22 19:51:34 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+20/06/22 19:51:34 INFO HiveMetaStore: Added admin role in metastore
+20/06/22 19:51:34 INFO HiveMetaStore: Added public role in metastore
+20/06/22 19:51:34 INFO HiveMetaStore: No user is added in admin role, since config is empty
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_all_functions
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_all_functions	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: default
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: default	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: global_temp
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: global_temp	
+20/06/22 19:51:34 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: default
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: default	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: default
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: default	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: default
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: default	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_database: default
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_database: default	
+20/06/22 19:51:34 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+20/06/22 19:51:34 INFO audit: ugi=ss	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
